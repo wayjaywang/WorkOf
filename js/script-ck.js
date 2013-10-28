@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#slideshow > div:gt(0)").hide();setInterval(function(){$("#slideshow > div:first").fadeOut(2e3).next().fadeIn(2e3).end().appendTo("#slideshow")},4e3)});$(function(){$(".js-scroll-to-invite").click(function(){$("html,body").animate({scrollTop:$(".signup").offset().top},1e3);$("#email-input-field").focus()})});

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>WorkOf</title>
+		<meta name="description" content="Local Makers for Local Business" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+
+	</head>
+	<body>
+		
+		<header class="header clearfix fixed-width-content">
+			<a class="header-logo hide-text" href ="#">WorkOf</a>
+			<a class="button clearfix js-scroll-to-invite" href="#">Request an Invite</a>
+		</header>
+
+		<div id="slideshow">	
+		
+			<h1 class="hero-text fixed-width-content">We Connect Furniture Makers with New York Boutiques</h1>
+			<div class="slide1">
+			</div>
+			<div class="slide2">
+			</div>
+			<div class="slide3">
+			</div>
+		</div>
+		
+		<section class="about-us fixed-width-content">
+			<div class="container">
+				<h2 class="title">What We Do</h2>
+				<p class="about-us-text">We are WorkOf, a family of Makers in New York City.  We are dedicated to connecting local artisans to furniture sellers, boutiques, and distributors. Our mission is to build a community where Makers can discover and inspire other Makers.</p>
+			</div>
+		</section>
+	
+		<section class="featured">
+			<article class="clearfix fixed-width-content">
+				<h2 class="title">Featured Makers</h2>
+				<div class="maker-tray clearfix">
+					
+					<div class="maker">
+						<div class="product-crop">
+							<img src="images/product1.jpg">
+						</div>
+
+						<div class="maker-info clearfix">
+							<div class="maker-crop">
+								<img src="images/1.jpg">
+							</div>
+							<p class="maker-name">
+								<strong>Thomas Smith</strong>
+								<br>
+								<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">	Brooklyn, NY</span>
+							</p>
+						</div>
+
+						<p class="maker-desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+						</p>
+					</div>
+
+					<div class="maker">
+						<div class="product-crop">
+							<img src="images/product2.jpg">
+						</div>
+
+						<div class="maker-info clearfix">
+							<div class="maker-crop">
+								<img src="images/2.jpg">
+							</div>	
+							<p class="maker-name">
+								<strong>Becca Hathaway</strong>
+								<br>
+								<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">Brooklyn, NY</span>
+							</p>
+						</div>
+						<p class="maker-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum.
+						</p>
+					</div>
+
+					<div class="maker">
+						<div class="product-crop">
+							<img src="images/product3.jpg">
+						</div>
+						<div class="maker-info clearfix">
+							<div class="maker-crop">
+								<img src="images/3.jpg">
+							</div>
+							<p class="maker-name">
+								<strong>Robert Blackcreek</strong>
+								<br>
+								<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">	Queens, NY</span>
+							</p>
+						</div>
+						<p class="maker-desc">Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula pr.
+						</p>
+					</div>
+
+				</div>
+			</article>
+		</section>
+
+		<section class="signup fixed-width-content">
+			<div class="container">
+				<h2 class="title">Get in touch</h2>
+				<p class="signup-text"> Are you a Maker? Sign up and be the first to know when we launch</p>
+			</div>
+
+			<div class="input-tray">
+				<div class="success-message">Thanks! We’ll let you know when the invites are out!</div>
+
+			    <script type="text/javascript">
+			      var TT = TT || {};
+
+			      TT.submitted=false;
+			      TT.errorClass = 'input-error';
+
+			      TT.submitForm = function () {
+			        var value = $('.email-input').val();
+			        var isValid = value.match(/.+\@.+\..+/);
+
+			        if (isValid) {
+			          TT.submitted = true;
+			        } else {
+			          TT.onFormError();
+			          return false;
+			        }
+			      };
+
+			      TT.onFormError = function () {
+			        //var $form = $('.email-form');
+
+			        $('body').addClass(TT.errorClass);
+			      };
+
+			      TT.onFormSubmit = function () {
+			        $('body').removeClass(TT.errorClass).addClass('form-submitted');
+			      };
+		    </script>
+		    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(TT.submitted) { TT.onFormSubmit();}"></iframe>
+     
+
+				<form action="https://docs.google.com/forms/d/1qLvAfPEFs4zigPUv5NkdyCbrKD7wuyBRHdclOOQv3Es/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="TT.submitForm();"><ol style="padding-left: 0">
+
+				<input type="email" name="entry.1301982507" value="" id="email-input-field" class="email-input" id="entry_1301982507" dir="auto" title="" placeholder="EMAIL ADDRESS">
+				<input type="submit" class="submit" name="submit" value="Submit" id="ss-submit">
+				</form>
+
+
+			</div>
+		</section>
+			
+		<footer class="footer">
+			<p class="footer-text  fixed-width-content">© 2013 WorkOf • Made in NYC</p>
+		</footer>
+
+	</body>
