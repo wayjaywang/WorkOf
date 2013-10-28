@@ -115,6 +115,21 @@ body{
   margin: 0 0 2.75em 0;
 }
 
+.hero-text{
+  position:relative;
+  font-weight: bold;
+  font-family: $font-stack-sans-serif;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding:4em 1em;
+  margin: 0;
+  line-height: $lineheight-hero;
+  z-index: 100;
+}
+
+
 #slideshow { 
     margin: 0 auto 2.75em; 
     position: relative; 
@@ -145,19 +160,6 @@ body{
   background: url(../images/hero-bg3.jpeg) no-repeat center center;
   background-size: cover;
   z-index: 90;
-}
-
-.hero-text{
-  position:relative;
-  font-family: $font-stack-sans-serif;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  padding:4em 1em;
-  margin: 0;
-  line-height: $lineheight-hero;
-  z-index: 100;
 }
 
 .title{
@@ -220,7 +222,7 @@ body{
   width: 100%;
   margin: -10.5em 0 1em 0;
   padding: 1.1em;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,.9) 100%);
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 100%);
   position: relative;
   z-index: 1;
 }
