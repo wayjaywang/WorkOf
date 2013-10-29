@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>WorkOf</title>
+		<meta name="description" content="Local Makers for Local Business" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		
+		<header class="header clearfix fixed-width-content">
+			<a class="header-logo hide-text" href ="#">WorkOf</a>
+			<a class="button clearfix js-scroll-to-invite" href="#">Request an Invite</a>
+		</header>
+
+		<div class ="section-title makers-index">	
+			<p class="title-text fixed-width-content">Thomas Smith</p>
+			
+			</p>
+
+						<div class="maker-info-profile clearfix">
+							<div class="maker-crop">
+								<img src="images/1.jpg">
+							</div>
+							<p class="maker-name">
+								<span class="tag-text">Woodworking, Furniture</span><br>
+								<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">	Brooklyn, NY</span>	
+							</p>
+						</div>
+		</div>
+		
+		<section class="portfolio">
+			<article class="clearfix">
+				<div class="portfolio-container fixed-width-content">
+						<div><img src ="images/port1.jpg" alt=""></div>
+						<div><img src ="images/port2.jpg" alt=""></div>
+						<div><img src ="images/port3.jpg" alt=""></div>
+						<div><img src ="images/port4.jpg" alt=""></div>
+						<div><img src ="images/port5.jpg" alt=""></div>
+						<div><img src ="images/port6.jpg" alt=""></div>
+						<div><img src ="images/port5.jpg" alt=""></div>
+						<div><img src ="images/port6.jpg" alt=""></div>
+						<div><img src ="images/port3.jpg" alt=""></div>
+						<div><img src ="images/port2.jpg" alt=""></div>
+						<div><img src ="images/port4.jpg" alt=""></div>
+						<div><img src ="images/port1.jpg" alt=""></div>
+				</div>
+			</article>
+		</section>
+
+		<section class="signup fixed-width-content">
+			<div class="container">
+				<h2 class="title">Get in touch</h2>
+				<p class="signup-text"> Are you a Maker? Sign up and be the first to learn how to create your portfolio.</p>
+			</div>
+
+			<div class="input-tray">
+				<div class="success-message">Thanks! We’ll let you know when the invites are out!</div>
+
+			    <script type="text/javascript">
+			      var TT = TT || {};
+
+			      TT.submitted=false;
+			      TT.errorClass = 'input-error';
+
+			      TT.submitForm = function () {
+			        var value = $('.email-input').val();
+			        var isValid = value.match(/.+\@.+\..+/);
+
+			        if (isValid) {
+			          TT.submitted = true;
+			        } else {
+			          TT.onFormError();
+			          return false;
+			        }
+			      };
+
+			      TT.onFormError = function () {
+			        //var $form = $('.email-form');
+
+			        $('body').addClass(TT.errorClass);
+			      };
+
+			      TT.onFormSubmit = function () {
+			        $('body').removeClass(TT.errorClass).addClass('form-submitted');
+			      };
+		    </script>
+		    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(TT.submitted) { TT.onFormSubmit();}"></iframe>
+     
+
+				<form action="https://docs.google.com/a/varsity.is/forms/d/1Qx0sTpUJbEyZbWno3sx1d6jdRe7cEN7RFkHfOqtmPFc/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="TT.submitForm();"><ol style="padding-left: 0">
+
+				<input type="email" name="entry.1489924744" value="" id="email-input-field" class="email-input" id="entry_1489924744" dir="auto" title="" placeholder="EMAIL ADDRESS">
+				<input type="submit" class="submit" name="submit" value="Submit" id="ss-submit">
+				</form>
+
+
+			</div>
+		</section>
+			
+		<footer class="footer">
+			<p class="footer-text  fixed-width-content">© 2013 WorkOf • Made in NYC</p>
+		</footer>
+
+	</body>

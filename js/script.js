@@ -4,6 +4,7 @@ $(document).ready(function(){
   $("#slideshow > div:gt(0)").hide();
 
   setInterval(function() {
+      
       $('#slideshow > div:first')
       .fadeOut(2000)
       .next()
@@ -19,19 +20,6 @@ $(document).ready(function(){
   var rando = quotes[Math.floor( Math.random() * quotes.length )];
   $('.hero-text').text(rando);
 
-//write something to the console
-
-//write one headline "string" to the console
-
-//write all the headlines to the console
-
-//write all the headlines in an array to the console
-
-//write one string within the array to the console
-
-//write one random string within the array to the console
-
-//write one random string within the array to the h1
 });
 
 $(function(){

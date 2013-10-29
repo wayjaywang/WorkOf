@@ -17,22 +17,22 @@ $font-stack-serif: 'Tiempos Text', Georgia, serif;
 /*Base Styles*/
 
 body, html{
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html{
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body{
-	font-size: 16px;
-	width: 100%;
-	height: auto;
-	-webkit-tap-highlight-color: black;
-	-webkit-font-smoothing: antialiased;
-	background: white;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  -webkit-tap-highlight-color: black;
+  -webkit-font-smoothing: antialiased;
+  background: white;
 }
 
 ::selection {
@@ -54,8 +54,8 @@ body{
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .clearfix {
@@ -89,25 +89,25 @@ a,h1,h2,h3,h4,h5,span {
 /*Page Styles*/
 
 body{
-	font-family: $font-stack-serif;
+  font-family: $font-stack-serif;
 }
 
 .header{
-	padding: 1.5em;
-	background: white;
+  padding: 1.5em;
+  background: white;
 }
 
 .header-logo{
-	display: block;
-	background: url(../images/workof-logo.svg) no-repeat top left;
-	width:100px;
-	height: 22.5px;
-	background-size: 100px 22px;
-	margin: 0 auto;
+  display: block;
+  background: url(../images/workof-logo.svg) no-repeat top left;
+  width:100px;
+  height: 22.5px;
+  background-size: 100px 22px;
+  margin: 0 auto;
 }
 
 .button{
-	display: none;
+  display: none;
   font-family: $font-stack-sans-serif;
 }
 
@@ -130,6 +130,15 @@ body{
   z-index: 100;
 }
 
+.tag-text {
+  font-style: italic;
+  font-weight: normal;
+  font-family: $font-stack-serif;
+  text-transform: none;
+  padding:0;
+  line-height: 0;
+
+}
 
 #slideshow { 
     margin: 0 auto 2.75em; 
@@ -177,14 +186,14 @@ body{
 }
 
 .title{
-	font-family: $font-stack-sans-serif;
-	font-weight:bold;
-	color: $gold-color;
-	text-align: center;
-	font-size: .9em;
-	letter-spacing: .1em;
-	text-transform: uppercase;
-	margin: 0 0 2.75em 0;
+  font-family: $font-stack-sans-serif;
+  font-weight:bold;
+  color: $gold-color;
+  text-align: center;
+  font-size: .9em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin: 0 0 2.75em 0;
   padding: .75em;
 
 }
@@ -194,33 +203,32 @@ body{
 }
 
 .about-us, .signup{
-	margin: 0 0 2em 0;
-	padding: 0 2em;
+  margin: 0 0 2em 0;
+  padding: 0 2em;
 }
 
 .about-us-text, .signup-text{
-	font-size: 20px;
-	text-align: center;
-	margin: 0;
-	line-height: $lineheight-text;
-	color:$text-color;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  line-height: $lineheight-text;
+  color:$text-color;
 }
 
 
-.featured{
-	background: $bg-color;
-	margin: 0 0 2.75em 0;
-	padding: 2em;
-
+.featured, .portfolio {
+  background: $bg-color;
+  margin: 0 0 2.75em 0;
+  padding: 2em;
 }
 
 .maker{
   background: white;
   padding: 1em;
-	margin: 0 0 2em 0;
-	text-align: left;
-	line-height: $lineheight-text;
-	color:$text-color;
+  margin: 0 0 2em 0;
+  text-align: left;
+  line-height: $lineheight-text;
+  color:$text-color;
   &:last-child{
     margin: 0 0 2.75em 0;
   }
@@ -236,13 +244,20 @@ body{
   }
 }
 
-.maker-info{
+.maker-info, .maker-info-profile{
   width: 100%;
-  margin: -10.5em 0 1em 0;
   padding: 1.1em;
   background: -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 100%);
   position: relative;
   z-index: 1;
+}
+
+.maker-info {
+  margin: -10.5em 0 1em 0;
+}
+
+.maker-info-profile {
+  margin: -5.5em 0 0em 0;
 }
 
 .maker-crop{
@@ -262,7 +277,7 @@ body{
   text-align: center;
   position: relative;
   z-index: 2;
-	color: white;
+  color: white;
   font-size: 16px;
   .location{
     position: relative;
@@ -279,42 +294,58 @@ body{
   }
 }
 
+.portfolio-container {
+    -moz-column-count: 1;
+    -moz-column-gap: 1.25em;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 1.25em;
+    column-count: 1;
+    column-gap: 1.25em;
+    width: 100%;
+}
+
+.portfolio-container div {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 1.25em 0;
+}
+
 input{
-	width: 100%;
-	display: block;
-	-webkit-appearance: none;
-	border: 0;
-	padding: 0;
-	font-size: 0.75em;
-	text-align: center;
-	padding: 1.25em 1em;
-	margin: 0.5em 0 0 0;
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 0;
+  font-size: 0.75em;
+  text-align: center;
+  padding: 1.25em 1em;
+  margin: 0.5em 0 0 0;
   font-family: $font-stack-sans-serif;
 
 }
 
 .input-tray{
-		display:block;
-		margin: 0 auto 4em;
-		overflow: hidden;
-		height: 7em;
-}	
+    display:block;
+    margin: 0 auto 4em;
+    overflow: hidden;
+    height: 7em;
+} 
 
 .form-submitted.input-tray{
-	margin: 0 auto -3.25em;
+  margin: 0 auto -3.25em;
 
 }
 
 .email-input{
-	background: $bg-color;
-	margin: 1.25em 0 1em 0;
-	 padding: 1.5em 1em;
+  background: $bg-color;
+  margin: 1.25em 0 1em 0;
+   padding: 1.5em 1em;
    -webkit-transition: background .5s;
-	&:focus{
+  &:focus{
     background:#f3f3f3;
     -webkit-transition: background .25s;
     outline:none;
-	};
+  };
 }
 
 
@@ -333,16 +364,16 @@ input{
 }
 
 .email-submit{
-	background: $primary-color;
-	color:white;
-	-webkit-transition: background .5s;
-	&:hover{
-		background: #1C2126;
-		-webkit-transition: background .25s;
-	};
-	&:focus{
-		outline: none;
-	};
+  background: $primary-color;
+  color:white;
+  -webkit-transition: background .5s;
+  &:hover{
+    background: #1C2126;
+    -webkit-transition: background .25s;
+  };
+  &:focus{
+    outline: none;
+  };
 }
 
 
@@ -358,31 +389,31 @@ input{
   padding: 1.5em 1em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-	-webkit-transition: background 1s;
+  -webkit-transition: background 1s;
 
-	&:hover{
-		background: #1C2126;
-		-webkit-transition: background .25s;
-	}
+  &:hover{
+    background: #1C2126;
+    -webkit-transition: background .25s;
+  }
 
-	&:focus{
-		outline: none;
-	};
+  &:focus{
+    outline: none;
+  };
 
 }
 
 .success-message{
-	background: $primary-color;
-	color: white;
+  background: $primary-color;
+  color: white;
   text-align: center;
-	padding: 1em;
-	margin: -5.25em 0 0 0;
-	opacity: 0;
+  padding: 1em;
+  margin: -5.25em 0 0 0;
+  opacity: 0;
 }
 
 .form-submitted .success-message{
-	opacity: 1;
-	margin: 0;
+  opacity: 1;
+  margin: 0;
     -webkit-transition: opacity 0.5s ease-in 1s, margin 0s linear 1s;
     -moz-transition: opacity 0.5s ease-in 1s, margin 0s linear 1s;
     -o-transition: opacity 0.5s ease-in 1s, margin 0s linear 1s;
@@ -390,7 +421,7 @@ input{
 }
 
 .form-submitted .email-input,  .form-submitted .submit {
-	opacity:0 !important;
+  opacity:0 !important;
     -webkit-transition: opacity 0.5s ease-in 0.5s;
     -moz-transition: opacity 0.5s ease-in 0.5s;
     -o-transition: opacity 0.5s ease-in 0.5s;
@@ -399,19 +430,20 @@ input{
 
 
 .footer{
-	background: $primary-color-dark;
-	color: white;
-	font-size: .7em;
-	font-weight: 600;
-	padding: 3em;
-	text-align: center;
-	text-transform: uppercase;
+  background: $primary-color-dark;
+  color: white;
+  font-family: $font-stack-sans-serif;
+  font-size: .7em;
+  font-weight: 600;
+  padding: 3em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 430px){
-	.input-tray{
-		height:8.125em;
-	}
+  .input-tray{
+    height:8.125em;
+  }
 
   .email-input{
     margin: 3em 0 1em 0;
@@ -426,63 +458,71 @@ input{
     height: 72px;
     margin: .5em auto .75em;
   }
+
+  .portfolio-container {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  
 }
 
 @media (min-width: 768px){
-	.fixed-width-content{
-		max-width: 70%;
-		margin: 0 auto;
-	}
+  .fixed-width-content{
+    max-width: 70%;
+    margin: 0 auto;
+  }
 
-	.hero-text{
-		font-size: 2.4em;
+  .hero-text{
+    font-size: 2.4em;
     padding: 3em 1em;
-	}
+  }
+
 }
 
 @media (min-width: 1024px){
-	
-	.fixed-width-content{
-		max-width: 1024px;
-		margin: 0 auto;
-	}
+  
+  .fixed-width-content{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 
-	.header-logo{
-		float:left;
-		margin: 0.8em 0 0 0;
-	}
+  .header-logo{
+    float:left;
+    margin: 0.8em 0 0 0;
+  }
 
-	#slideshow{
-		margin: 0 0 3em 0;
-	}
+  #slideshow{
+    margin: 0 0 3em 0;
+  }
 
   .container{
     margin:0 0 3em 0;
   }
 
-	.hero-text, .title-text{
-		font-size: 60px;
-		margin: 0 auto;
-		padding: 3em 1em;
-	}
-	
-	.button{
-		display: block;
-		background: $primary-color;
-		color: white; 
-		float:right;
-		padding: 1.25em 2em;
-		font-size: 0.75em;
-		letter-spacing: 0.2em;
-		text-transform: uppercase;
-		font-weight: 600;
-		-webkit-transition: background 1s;
+  .hero-text, .title-text{
+    font-size: 60px;
+    margin: 0 auto;
+    padding: 3em 1em;
+  }
+  
+  .button{
+    display: block;
+    background: $primary-color;
+    color: white; 
+    float:right;
+    padding: 1.25em 2em;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: background 1s;
 
-		&:hover{
-			background: #1C2126;
-			-webkit-transition: background .25s;
-		}
-	}
+    &:hover{
+      background: #1C2126;
+      -webkit-transition: background .25s;
+    }
+  }
 
   .title{
   margin: 0 0 3em 0;
@@ -492,15 +532,23 @@ input{
     margin: 3em 0;
   }
 
-	.about-us-text, .signup-text{
-		font-size: 26px;
-	}
+  .about-us-text, .signup-text{
+    font-size: 26px;
+  }
 
 
-	.featured{
-		margin: 0 auto 3em;
-		padding: 3em .75em 4em;
-	}
+  .featured, .portfolio{
+    margin: 0 auto 3em;
+  }
+
+  .featured {
+    padding: 3em .75em 4em;
+  }
+
+  .portfolio{
+    padding: 3em .75em 0em;
+  }
+
 
   .maker-tray{
     padding-top: 1.25em;
@@ -519,45 +567,51 @@ input{
     margin: 0 auto 0em;
   }
 
-	.maker{
-		width:32%;
+  .maker{
+    width:32%;
     height:25em;
-		margin: 0 1.25em 0 0;
-		float:left;
-		padding:1em;
+    margin: 0 1.25em 0 0;
+    float:left;
+    padding:1em;
     &:last-child{
       margin:0;
     }
-	}
+  }
 
-	.input-tray{
-		width: 600px;
-		height: 3.1em;
-	}
+  .portfolio-container {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .input-tray{
+    width: 600px;
+    height: 3.1em;
+  }
 
 
-	input{
-		padding: 0;
-		margin: 0;
-		border: 0;
-		border: none;
-	}
+  input{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border: none;
+  }
 
 .email-input, .submit{
   float:left;
   margin: 2.8em 0 0 0;
 }
 
-	.email-input{
-		width: 500px;
-	}
+  .email-input{
+    width: 500px;
+  }
 
-	.submit{
-		width: 100px;
-	}
+  .submit{
+    width: 100px;
+  }
 
 
-	.footer{
-		text-align: left;
-	}
+  .footer{
+    text-align: left;
+  }
 }
