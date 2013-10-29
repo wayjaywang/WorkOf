@@ -196,15 +196,16 @@ body {
 .maker-info, .maker-info-profile {
   width: 100%;
   padding: 1.1em;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
   position: relative;
   z-index: 1; }
 
 .maker-info {
-  margin: -10.5em 0 1em 0; }
+  margin: -10.5em 0 1em 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%); }
 
 .maker-info-profile {
-  margin: -5.5em 0 0em 0; }
+  margin: -5.5em 0 0em 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 100%); }
 
 .maker-crop {
   position: relative;
