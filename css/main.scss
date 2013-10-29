@@ -115,8 +115,9 @@ body{
   margin: 0 0 2.75em 0;
 }
 
-.hero-text{
+.hero-text, .title-text{
   position:relative;
+  font-size: 32px;
   font-weight: bold;
   font-family: $font-stack-sans-serif;
   text-align: center;
@@ -145,6 +146,13 @@ body{
     bottom: 0px; 
 }
 
+.section-title { 
+    margin: 0 auto; 
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+}
+
 .slide1{
   background: url(../images/hero-bg1.jpeg) no-repeat center center;
   background-size: cover;
@@ -162,6 +170,12 @@ body{
   z-index: 90;
 }
 
+.makers-index{
+  background: url(../images/makers-index-bg.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 90;
+}
+
 .title{
 	font-family: $font-stack-sans-serif;
 	font-weight:bold;
@@ -175,13 +189,17 @@ body{
 
 }
 
+.title-first{
+  margin: 2.75em 0;
+}
+
 .about-us, .signup{
 	margin: 0 0 2em 0;
 	padding: 0 2em;
 }
 
 .about-us-text, .signup-text{
-	font-size: 22px;
+	font-size: 20px;
 	text-align: center;
 	margin: 0;
 	line-height: $lineheight-text;
@@ -199,7 +217,7 @@ body{
 .maker{
   background: white;
   padding: 1em;
-	margin: 0 0 2.75em 0;
+	margin: 0 0 2em 0;
 	text-align: left;
 	line-height: $lineheight-text;
 	color:$text-color;
@@ -252,8 +270,6 @@ body{
     font-size: 12px;
   }
 }
-
-
 
 .maker-desc{
   margin: 0 0 2em 0;
@@ -444,7 +460,7 @@ input{
     margin:0 0 3em 0;
   }
 
-	.hero-text{
+	.hero-text, .title-text{
 		font-size: 60px;
 		margin: 0 auto;
 		padding: 3em 1em;
@@ -468,6 +484,14 @@ input{
 		}
 	}
 
+  .title{
+  margin: 0 0 3em 0;
+  }
+
+  .title-first{
+    margin: 3em 0;
+  }
+
 	.about-us-text, .signup-text{
 		font-size: 26px;
 	}
@@ -475,12 +499,16 @@ input{
 
 	.featured{
 		margin: 0 auto 3em;
-		padding: 3em 0 4em;
+		padding: 3em .75em 4em;
 	}
 
   .maker-tray{
-    padding-top: .5em;
+    padding-top: 1.25em;
   }
+
+  .top-row {
+      padding-top: 0em;
+    }
 
   .maker-crop{
     margin: 0.5em auto .25em;
@@ -494,7 +522,7 @@ input{
 	.maker{
 		width:32%;
     height:25em;
-		margin: 0 2% 0 0;
+		margin: 0 1.25em 0 0;
 		float:left;
 		padding:1em;
     &:last-child{
