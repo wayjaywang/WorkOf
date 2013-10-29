@@ -229,18 +229,18 @@ body{
 
 .maker-crop{
   position: relative;
-  width: 72px;
-  height: 72px;
-  overflow: hidden;
-  margin: .5em auto .75em;
+  width: 64px;
+  height: 64px;
+  margin: 1.5em auto 0.5em;
   border-radius: 44px;
   z-index: 2;
   border: 4px solid white;
+  overflow: hidden;
 }
 
 .maker-name{
   line-height: 1.3em;
-  margin: 0 auto;
+  margin: 0 auto -0.25em;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -401,6 +401,15 @@ input{
     margin: 3em 0 1em 0;
   }
 
+  .maker-name{
+    margin: 0 auto;
+  }
+
+  .maker-crop{
+    width: 72px;
+    height: 72px;
+    margin: .5em auto .75em;
+  }
 }
 
 @media (min-width: 768px){
@@ -471,6 +480,15 @@ input{
 
   .maker-tray{
     padding-top: .5em;
+  }
+
+  .maker-crop{
+    margin: 0.5em auto .25em;
+  }
+
+  .maker-name{
+    padding-top: .5em;
+    margin: 0 auto 0em;
   }
 
 	.maker{
