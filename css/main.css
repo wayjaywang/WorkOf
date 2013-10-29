@@ -140,6 +140,11 @@ body {
   background-size: cover;
   z-index: 90; }
 
+.profile {
+  background: url(../images/profile-bg.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 90; }
+
 .title {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
