@@ -29,3 +29,29 @@ $(function(){
     });
 });
 
+var myCenter=new google.maps.LatLng(40.722263,-73.959574);
+
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(40.722263,-73.959574),
+  zoom:16,
+  disableDefaultUI: true,
+  panControl: false,
+  zoomControl: false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap")
+  ,mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  draggable:false,
+  animation: google.maps.Animation.DROP,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+

@@ -9,7 +9,9 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/jquery.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCAozMiUneFwd1T3sMYkjQ56-z_vDJeHvk&sensor=false"></script>
 		<script src="js/script.js"></script>
+
 	</head>
 	<body>
 		
@@ -18,20 +20,22 @@
 			<a class="button clearfix js-scroll-to-invite" href="#">Request an Invite</a>
 		</header>
 
-		<div class ="section-title profile">	
-			<p class="title-text fixed-width-content">Thomas Smith</p>
-			
-			</p>
 
-						<div class="maker-info-profile clearfix">
-							<div class="maker-crop">
-								<img src="images/1.jpg">
-							</div>
-							<p class="maker-name">
-								<span class="tag-text">Woodworking, Furniture</span><br>
-								<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">	Brooklyn, NY</span>	
-							</p>
-						</div>
+		<div class ="section-title">
+			<div id="googleMap">
+			</div>
+				<p class="title-text fixed-width-content">Thomas Smith</p>
+			
+				<div class="maker-info-profile clearfix">
+					<div class="maker-crop">
+						<img src="images/1.jpg">
+					</div>
+					<p class="maker-name">
+						<span class="tag-text">Woodworking, Furniture</span><br>
+						<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">	Brooklyn, NY</span>	
+					</p>
+				</div>
+			</div>
 		</div>
 		
 		<section class="portfolio">
