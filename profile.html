@@ -12,28 +12,86 @@
 		<script src="js/script.js"></script>
 	</head>
 	<body>
-		
 		<header class="header clearfix fixed-width-content">
 			<a class="header-logo hide-text" href ="index.html">WorkOf</a>
 			<a class="button clearfix js-scroll-to-invite" href="#">Request an Invite</a>
 		</header>
 
-		<div class ="section-title profile">	
-			<p class="title-text fixed-width-content">Thomas Smith</p>
-			
-			</p>
 
-						<div class="maker-info-profile clearfix">
-							<div class="maker-crop">
-								<img src="images/1.jpg">
-							</div>
-							<p class="maker-name">
-								<span class="tag-text">Woodworking, Furniture</span><br>
-								<img height="10" width="8" alt="" src="images/location.svg"> <span class="location">	Brooklyn, NY</span>	
-							</p>
-						</div>
+
+		<div class ="section-title profile">
+			<div class = "maker-info-profile-overlay"></div>	
+			<p class="title-text fixed-width-content">Bower</p>
+		</div>
+
+		<div class="maker-crop-profile">
+			<img src="images/1.jpg">
 		</div>
 		
+		<div class="overlay-bg">
+			<div class="overlay-content">
+				<form>
+					<input class="contact-input" placeholder="NAME">
+					<input class="contact-input" placeholder="EMAIL">
+					<input class="contact-input" placeholder="TYPE OF WORK">
+					<textarea class="contact-input" rows="10" cols="30">MESSAGE</textarea>
+
+					<a href ="#" class="button-form-submit close-btn">Submit</a>
+				</form>
+			</div>
+		</div>
+
+		<section class="profile-info fixed-width-content">
+
+
+			<div class="maker-tray clearfix">
+
+					<div class="info info-first">
+						<h2 class="profile-title">Bio</h2>
+						<div class="maker-desc">
+							<p style="margin-bottom: 9px;">Danny Giannella and Tammer Hijazi co-founded Bower Studios in 2012.  Combining fine woodworking with playful experimentation, they create pieces that look to the future with a nod to the past.</p>
+
+							<a class="button-contact clearfix show-popup" href="#">Contact Maker</a>
+
+
+							<div class="social-icons clearfix">
+								<ul>
+									<li><a href ="#"><img alt="" src="images/icon-globe.svg"></a></li>
+									<li><a href ="#"><img alt="" src="images/icon-facebook.svg"></a></li>
+									<li><a href ="#"><img alt="" src="images/icon-twitter.svg"></a></li>
+									<li><a href ="#"><img alt="" src="images/icon-instagram.svg"></a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+					<div class ="info">
+						<h2 class="profile-title">Address</h2>
+						<div class="maker-desc">
+							<a href="http://maps.google.com/?q=57 Kent Ave.Brooklyn, New York 11249" class="link-to-add" target="_blank">57 Kent Ave. Brooklyn, NY 11249</a>
+						</div>
+						<h2 class="profile-title">Availability</h2>
+						<div class="maker-desc">
+							November 10, 2013 &mdash; December 20, 2013
+						</div>
+					</div>
+
+					<div class="info info-last">
+						<h2 class="profile-title  profile-title-first">Skills</h2>
+						<p class="maker-desc">
+							<span class="tags">Wood</span><span class="tags">Furniture</span><span class="tags">Lighting</span>
+						</p>
+					</div>
+
+
+
+
+				</div>
+
+
+		</section>
+
 		<section class="portfolio">
 			<article class="clearfix">
 				<div class="portfolio-container fixed-width-content">
@@ -58,6 +116,7 @@
 				<h2 class="title">Get in touch</h2>
 				<p class="signup-text"> Are you a Maker? Sign up and be the first to learn how to create your portfolio.</p>
 			</div>
+
 
 			<div class="input-tray">
 				<div class="success-message">Thanks! We’ll let you know when the invites are out!</div>
@@ -104,7 +163,10 @@
 		</section>
 			
 		<footer class="footer">
-			<p class="footer-text  fixed-width-content">© 2013 WorkOf • Made in NYC</p>
+			<div class ="fixed-width-content">
+				<img src ="images/miny_logo_sm2.png" alt="" class="miny">
+				<p class="footer-text">© 2013 WorkOf • Made in NYC</p>
+			</div>
 		</footer>
 
 	</body>
