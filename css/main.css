@@ -235,8 +235,18 @@ body {
   background-size: cover;
   z-index: 90; }
 
-.profile {
-  background: url(../images/profile-bg.jpg) no-repeat center center;
+.profile-bower {
+  background: url(../images/profile-bg1.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 90; }
+
+.profile-ferrah {
+  background: url(../images/profile-bg2.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 90; }
+
+.profile-pickett {
+  background: url(../images/profile-bg3.jpg) no-repeat center center;
   background-size: cover;
   z-index: 90; }
 
